@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+<!--    <include-->
+<!--        android:id="@+id/include"-->
+<!--        layout="@layout/content_main" />-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/list_todo">
+    </ListView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/ic_launcher_background" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_main"
+        android:layout_width="309dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/ic_launcher_background"
+        android:hint="@string/input_main" />
+
+
+    <Button
+        android:id="@+id/action_add_task"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="2dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/ic_launcher_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:title="@string/add_task"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/next_screen"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/ic_launcher_background"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:text="@string/get_to_work" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
